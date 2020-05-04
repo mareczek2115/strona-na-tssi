@@ -1,0 +1,121 @@
+/* Font made from Online Web Fonts */
+@font-face{
+    font-family: Mistral;
+    src: url("Mistral W01.ttf") format("ttf");
+}
+
+@font-face{
+    font-family: Menlo;
+    src: url("Menlo-Regular.ttf");
+}
+
+body{
+    background-color: #fff8ef;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center
+}
+
+.top{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 950px;
+}
+
+.logo{
+    font-family: Mistral;
+    font-size: 45px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.buttons{
+    display: flex;
+    border-radius: 10px;
+    background-color: #e5dbc6;
+    width: 600px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    font-family: Menlo;
+}
+
+.button{
+    font-family: Menlo;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #c4beb1;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #e5dbc6;
+    width: 900px;
+    height: 460px;
+    font-family: Menlo;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    align-items: flex-start;
+}
+
+#text{
+    margin-top: -25px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    margin-top: -30px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #e5dbc6;
+    width: 900px;
+    height: 95px;
+    border-radius: 10px;
+    margin-top: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Menlo;
+    align-items: center;
+    font-size: 18px;
+}
+
+#copyright{
+    font-size: 10px;
+    margin-top: -1px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    width: 750px;
+}   
+
+#mail{
+    margin-top: 6px;
+}
