@@ -23,15 +23,15 @@
         <div class="slider">
             <img id="slider" src="image1.png" alt="">
             <div class="arrows">
-                <div class="prev" onclick="changeImage(this.id)">&#10094;</div>
-                <div class="next" onclick="changeImage(this.id)">&#10095;</div>
+                <div id="prev" onclick="changeImage(this.id)">&#10094;</div>
+                <div id="next" onclick="changeImage(this.id)">&#10095;</div>
             </div>
             <div class="dots">
-                <div id="one" class="dot"></div>
-                <div id="two" class="dot"></div>
-                <div id="three" class="dot"></div>
-                <div id="four" class="dot"></div>
-                <div id="five" class="dot"></div>
+                <div id="one" class="dot" onclick="dotChange(this.id)"></div>
+                <div id="two" class="dot" onclick="dotChange(this.id)"></div>
+                <div id="three" class="dot" onclick="dotChange(this.id)"></div>
+                <div id="four" class="dot" onclick="dotChange(this.id)"></div>
+                <div id="five" class="dot" onclick="dotChange(this.id)"></div>
             </div>
         </div>
         <div class="content">
@@ -54,5 +54,6 @@
         </div>
         <p id="copyright">Copyrights by Marek Kramarz</p>
     </div>
+    <script src="slider.js"></script>
 </body>
 </html>
