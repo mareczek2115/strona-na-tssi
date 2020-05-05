@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="fontello/css/fontello.css">
     <link rel="icon" type="image/png" href="icon.png">
 </head>
-<body>
+<body onload="setDotColor()">
     <div class="top">
         <div class="logo">Marcin Knapczyk</div>
         <div class="buttons">
@@ -21,16 +21,17 @@
     </div>
     <div class="mid">
         <div class="slider">
+            <img id="slider" src="image1.png" alt="">
             <div class="arrows">
-                <div class="prev">&#10094;</div>
-                <div class="next">&#10095;</div>
+                <div class="prev" onclick="changeImage(this.id)">&#10094;</div>
+                <div class="next" onclick="changeImage(this.id)">&#10095;</div>
             </div>
             <div class="dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+                <div id="one" class="dot"></div>
+                <div id="two" class="dot"></div>
+                <div id="three" class="dot"></div>
+                <div id="four" class="dot"></div>
+                <div id="five" class="dot"></div>
             </div>
         </div>
         <div class="content">
@@ -41,7 +42,7 @@
                 doświadczeniu każdy projekt będzie dostosowany specjalnie<br>
                 do indywidulanych potrzeb. Więcej informacji w O Mnie.
             </p>
-            <img src="main image.png" alt="">
+            <img id="main_image" src="main image.png" alt="">
         </div>
     </div>
     <div class="footer">
