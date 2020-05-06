@@ -8,9 +8,9 @@
     <link href="//db.onlinewebfonts.com/c/1cfac2832ad49f16a3ea6b5c2287af2f?family=Mistral" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="fontello/css/fontello.css">
     <link rel="icon" type="image/png" href="icon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 </head>
-<body>
+<body onload="autoChangeImage()">
     <div class="top">
         <div class="logo">Marcin Knapczyk</div>
         <div class="buttons">
@@ -22,7 +22,7 @@
     </div>
     <div class="mid">
         <div class="slider">
-            <img id="photo" src="image1.png" alt="">
+                <img id="photo" src="" alt="">
             <div class="arrows">
                 <div id="prev" onclick="changeImage(this.id)">&#10094;</div>
                 <div id="next" onclick="changeImage(this.id)">&#10095;</div>
@@ -43,7 +43,7 @@
                 doświadczeniu każdy projekt będzie dostosowany specjalnie<br>
                 do indywidulanych potrzeb. Więcej informacji w O Mnie.
             </p>
-            <img id="main_image" src="main image.png" alt="">
+            <img id="main_image" src="images/main image.png" alt="">
         </div>
     </div>
     <div class="footer">
@@ -56,6 +56,13 @@
         <p id="copyright">Copyrights by Marek Kramarz</p>
     </div>
     <script src="slider.js">
+        // while(true){
+        //     for(i=1; i<=5; i++){
+        //         n = i.toString();
+        //         document.querySelector("#photo").setAttribute("src", `image${n}.png`);
+        //         setTimeout(4000);
+        //     }
+        // }
     </script>
 </body>
 </html>
