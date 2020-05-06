@@ -8,8 +8,9 @@
     <link href="//db.onlinewebfonts.com/c/1cfac2832ad49f16a3ea6b5c2287af2f?family=Mistral" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="fontello/css/fontello.css">
     <link rel="icon" type="image/png" href="icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body onload="setDotColor()">
+<body>
     <div class="top">
         <div class="logo">Marcin Knapczyk</div>
         <div class="buttons">
@@ -21,7 +22,7 @@
     </div>
     <div class="mid">
         <div class="slider">
-            <img id="slider" src="image1.png" alt="">
+            <img id="photo" src="image1.png" alt="">
             <div class="arrows">
                 <div id="prev" onclick="changeImage(this.id)">&#10094;</div>
                 <div id="next" onclick="changeImage(this.id)">&#10095;</div>
@@ -29,7 +30,7 @@
             <div class="dots">
                 <div id="one" class="dot" onclick="dotChange(this.id)"></div>
                 <div id="two" class="dot" onclick="dotChange(this.id)"></div>
-                <div id="three" class="dot" onclick="dotChange(this.id)"></div>
+                <div id="three" class="dot" onclick="dotChange(this.id)" onmouseover="markDot(this.id)"></div>
                 <div id="four" class="dot" onclick="dotChange(this.id)"></div>
                 <div id="five" class="dot" onclick="dotChange(this.id)"></div>
             </div>
@@ -54,6 +55,19 @@
         </div>
         <p id="copyright">Copyrights by Marek Kramarz</p>
     </div>
-    <script src="slider.js"></script>
+    <script src="slider.js">
+        $(document).ready(function(){
+            $(".dot").hover(function(){
+                $(this).css("background-color", "#a695a5");
+            }, function(){
+                $(this).css("background-color", "#fff8ef");
+            })
+        })
+        $(document).ready(function(){
+            $("p").hover(function(){
+                $(this).css("background-color", "yellow");
+            })
+        })
+    </script>
 </body>
 </html>
