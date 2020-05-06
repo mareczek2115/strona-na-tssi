@@ -73,33 +73,68 @@ function changeImage(id){
     
 }
 
+function clearDots(){
+    switch(dot){
+        case "one":
+            document.querySelector("#two").style.backgroundColor = "#fff8ef";
+            document.querySelector("#three").style.backgroundColor = "#fff8ef";
+            document.querySelector("#four").style.backgroundColor = "#fff8ef";
+            document.querySelector("#five").style.backgroundColor = "#fff8ef";
+            break;
+        case "two":
+            document.querySelector("#one").style.backgroundColor = "#fff8ef";
+            document.querySelector("#three").style.backgroundColor = "#fff8ef";
+            document.querySelector("#four").style.backgroundColor = "#fff8ef";
+            document.querySelector("#five").style.backgroundColor = "#fff8ef";
+            break;
+        case "three":
+            document.querySelector("#one").style.backgroundColor = "#fff8ef";
+            document.querySelector("#two").style.backgroundColor = "#fff8ef";
+            document.querySelector("#four").style.backgroundColor = "#fff8ef";
+            document.querySelector("#five").style.backgroundColor = "#fff8ef";
+            break;
+        case "four":
+            document.querySelector("#one").style.backgroundColor = "#fff8ef";
+            document.querySelector("#two").style.backgroundColor = "#fff8ef";
+            document.querySelector("#three").style.backgroundColor = "#fff8ef";
+            document.querySelector("#five").style.backgroundColor = "#fff8ef";
+            break;
+        case "five":
+            document.querySelector("#one").style.backgroundColor = "#fff8ef";
+            document.querySelector("#two").style.backgroundColor = "#fff8ef";
+            document.querySelector("#three").style.backgroundColor = "#fff8ef";
+            document.querySelector("#four").style.backgroundColor = "#fff8ef";
+            break;
+    }
+}
+
 function dotChange(id){
     dot = id.toString();
     switch(dot){
         case "one":
             document.getElementById("photo").setAttribute("src", "image1.png");
-            document.getElementsByClassName("dot").style.backgroundColor = "#fff8ef";
-            document.getElementById("one").style.backgroundColor = "#a695a5";
+            document.querySelector("#one").style.backgroundColor = "#a695a5";
+            clearDots();
             break;
         case "two":
             document.getElementById("photo").setAttribute("src", "image2.png");
-            document.getElementsByClassName("dot").style.backgroundColor = "#fff8ef";
-            document.getElementById("two").style.backgroundColor = "#a695a5";
+            document.querySelector("#two").style.backgroundColor = "#a695a5";
+            clearDots();
             break;
         case "three":
             document.getElementById("photo").setAttribute("src", "image3.png");
-            document.getElementsByClassName("dot").style.backgroundColor = "#fff8ef";
-            document.getElementById("three").style.backgroundColor = "#a695a5";
+            document.querySelector("#three").style.backgroundColor = "#a695a5";
+            clearDots();
             break;
         case "four":
             document.getElementById("photo").setAttribute("src", "image4.png");
-            document.getElementsByClassName("dot").style.backgroundColor = "#fff8ef";
-            document.getElementById("four").style.backgroundColor = "#a695a5";
+            document.querySelector("#four").style.backgroundColor = "#a695a5";
+            clearDots();
             break;
         case "five":
             document.getElementById("photo").setAttribute("src", "image5.png");
-            document.getElementsByClassName("dot").style.backgroundColor = "#fff8ef";
-            document.getElementById("five").style.backgroundColor = "#a695a5";
+            document.querySelector("#five").style.backgroundColor = "#a695a5";
+            clearDots();
             break;
     }
 }

@@ -135,6 +135,7 @@ a{
 }
 
 .dot{
+    background-color: #fff8ef;
     border-radius: 50%;
     width: 15px;
     height: 15px;
@@ -146,11 +147,6 @@ a{
     transition: 0.6s ease;
     z-index: 100;
 }
-
-/* .dot:hover{
-    background-color: #a695a5;
-    z-index: 100;
-} */
 
 .dots{
     display: flex;
@@ -197,5 +193,23 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    width: 700px;
+    font-size: 20px;
+    margin-top: 35px;
+    line-height: 30px;
+}
+
+.content_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    background-color: #e5dbc6;
+    width: 900px;
+    height: 460px;
+    font-family: Menlo;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    align-items: center;
 }
