@@ -1,12 +1,12 @@
 /* Font Mistral taken from Online Web Fonts */
 @font-face{
     font-family: Mistral;
-    src: url("Mistral W01.ttf");
+    src: url("fonts/Mistral W01.ttf");
 }
 
 @font-face{
     font-family: Menlo;
-    src: url("Menlo-Regular.ttf");
+    src: url("fonts/Menlo-Regular.ttf");
 }
 
 body{
