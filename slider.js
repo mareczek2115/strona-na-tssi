@@ -163,8 +163,12 @@ function autoChangeImage(){
     }
     number++;
     t = setTimeout("autoChangeImage()", 5300);
-    clearTimeout(x);
-    clearTimeout(y);
+    if(typeof x != 'undefined'){
+        clearTimeout(x);
+    }
+    if(typeof y != 'undefined'){
+        clearTimeout(y);
+    }
 }
 
 
@@ -180,3 +184,28 @@ function fadeIn(){
         clearTimeout(b);
     }
 }
+
+$(document).ready(function(){
+    $(".dot").hover(function(){
+        $(this).css("background-color", "#a695a5");
+    }, function(){
+        $(this).css("background-color", "#fff8ef");
+        switch(image){
+            case 'one':
+                document.getElementById("one").style.backgroundColor = '#a695a5';
+                break;
+            case 'two':
+                document.getElementById("two").style.backgroundColor = '#a695a5';
+                break;
+            case 'three':
+                document.getElementById("three").style.backgroundColor = '#a695a5';
+                break;
+            case 'four':
+                document.getElementById("four").style.backgroundColor = '#a695a5';
+                break;
+            case 'five':
+                document.getElementById("five").style.backgroundColor = '#a695a5';
+                break;
+        }
+    })
+});
