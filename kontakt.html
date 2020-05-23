@@ -6,27 +6,36 @@
     <title>Kontakt</title>
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!------- ------->
 </head>
 <body>
     <div class="top">
         <div class="logo">Marcin Knapczyk</div>
         <div class="buttons">
-            <div class="button"><a href="index.html">Strona główna</a></div>
-            <div class="button"><a href="#">O Mnie</a></div>
-            <div class="button"><a href="#">Galeria</a></div>
-            <div class="button"><a href="kontakt.html">Kontakt</a></div>
+            <div class="nav-button"><a href="index.html" style="text-decoration: none; color: black;">Strona główna</a></div>
+            <div class="nav-button"><a href="#" style="text-decoration: none; color: black;">O Mnie</a></div>
+            <div class="nav-button"><a href="#" style="text-decoration: none; color: black;">Galeria</a></div>
+            <div class="nav-button"><a href="kontakt.html" style="text-decoration: none; color: black;">Kontakt</a></div>
         </div>
     </div>
     <div class="content_2">
-        <h1>Kontakt</h1>
+        <h1 style="margin-top: 15px;">Kontakt</h1>
         <div class="kontakt">
-            <p>
-                <h2>Marcin Knapczyk</h2><br>
-                Skrzynka pocztowa: marcin.knapczyk@wp.pl<br>
-                Telefon: +48 500 600 900<br>
-                Facebook: https://tinyurl.com/y8gcbffj<br>
-                Telegram: https://tinyurl.com/y7g4tt38
-            </p>
+            <form action="https://www.onet.pl/">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="form-control" class="email" placeholder="Wpisz swój email" name="email" id="email" style="font-size: 14px; border: black 1px solid;"><br>
+                    <label for="comment">Wiadomość:</label><br>
+                    <textarea name="comment" class="" cols="50" rows="4" placeholder="Wpisz wiadomość" id="email" style="font-size: 14px; border: black 1px solid;"></textarea><br>
+                    <button type="submit" class="btn btn-primary" style="background-color: #a695a5; border: #a695a5;">Wyślij</button>
+                </div>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d905.5073935736964!2d19.925196827011053!3d50.064533789465045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1590256226538!5m2!1spl!2spl" width="450px" height="170px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
 </body>
