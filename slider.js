@@ -1,11 +1,9 @@
 var image = "one";
-var number = 1;
 var a = 0;
 var b = 0;
 document.getElementById("one").style.backgroundColor = "#a695a5";
 
 function changeImage(id){
-    if(typeof t != 'undefined') clearTimeout(t);
     if(id == "next"){
         switch(image){
             case "one":
@@ -74,8 +72,6 @@ function changeImage(id){
                 break;
         }
     }
-    // fadeIn();
-    x = setTimeout("autoChangeImage()", 5300);
 }
 
 function clearDots(){
@@ -114,7 +110,6 @@ function clearDots(){
 }
 
 function dotChange(id){
-    if(typeof t != 'undefined') clearTimeout(t);
     dot = id.toString();
     switch(dot){
         case "one":
@@ -148,42 +143,11 @@ function dotChange(id){
             clearDots();
             break;
     }
-    // fadeIn();
-    y = setTimeout("autoChangeImage()", 5300);
 }
 
-function autoChangeImage(){
-    if(number == 1){
-        document.querySelector("#photo").setAttribute("src", "images/image1.png");
-        // fadeIn();
-    }
-    else{
-        changeImage("next");
-        // fadeIn();
-    }
-    number++;
-    t = setTimeout("autoChangeImage()", 5300);
-    if(typeof x != 'undefined'){
-        clearTimeout(x);
-    }
-    if(typeof y != 'undefined'){
-        clearTimeout(y);
-    }
-}
-
-
-// function fadeIn(){
-//     var element = document.querySelector("#photo");
-//     if(a<1){
-//         a = a + 0.02;
-//         element.style.opacity = a;
-//         b = setTimeout("fadeIn()", 50);
-//     }
-//     else{
-//         a = 0;
-//         clearTimeout(b);
-//     }
-// }
+var timer = setInterval(function(){
+    changeImage("next");
+}, 5300);
 
 $(document).ready(function(){
     $(".dot").hover(function(){
